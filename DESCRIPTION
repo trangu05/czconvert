@@ -1,0 +1,32 @@
+Package: czconvert
+Type: Package
+Title: Convert and Crosswalk PUMAs to Commuting Zones (CZ90)
+Version: 0.1.0
+Authors@R: 
+    person(
+      given = "Tra",
+      family = "Nguyen",
+      email = "nguyenhuongtra96@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0000-0000-0000")
+    )
+Description: Provides crosswalks and helper functions to map Public Use Microdata 
+    Areas (PUMAs) from the U.S. Census (2000, 2010, 2020 vintages) into commuting 
+    zones (CZ90). Functions support both many-to-many mappings (using allocation 
+    factors) and one-to-one mappings (dominant CZ per PUMA). This package is 
+    useful for economists and social scientists working with ACS or Census 
+    microdata who need to aggregate individual records to consistent local 
+    labor market areas.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: R (>= 3.6)
+Imports: 
+    dplyr,
+    stringr,
+    haven,
+    utils
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
